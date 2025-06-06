@@ -1,0 +1,16 @@
+{
+  "name": "ryan-vincent-aetna-code-test",
+  "version": "1.0.0",
+  "description": "This is my implementation of the code test for CVS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Vincent",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "config": "^4.0.0",
+    "express": "^5.1.0"
+  }
+}
