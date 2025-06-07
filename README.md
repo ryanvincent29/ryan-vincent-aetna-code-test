@@ -22,7 +22,7 @@
 - `/movies/moviesByYear/:year`- Lists movies from a given year. Year is in the route. Has option for page parameter.
 - `/movies/moviesByGenre/:genre` - Lists movies from a given genre. Genre is in the route (text of genre). Has option for page parameter.
 
-________________________________
+---
 
 ## Pre-requisites
 
@@ -93,18 +93,3 @@ AC:
 
 - This is a test of your abilities and not how fast you can crank through random stories. As such, it is more important to produce well structured code that meets the criteria in the user stories rather than getting all stories done.
 - If you get stuck, please ask someone. We want to know how you work both as an individual and as part of a team. You will not lose points for asking for help on something that is unclear or where you are stuck.
-
-## Assumptions made by me. On a team, I would ask these questions during refinement and/or implementation.
-
-- I am assuming this is meant to be a REST-like API, as opposed to a portal or website of some kind.
-- Though not directy stated, movieId is never returned from the API. I am assuming that the preferred/required method is to lookup movie details via imdbId.
-- When querying by year, I am putting the budget into dollars to match the other endpoints
-- When querying by year, I am assuming that "descending" order is the database equivalent `order by X desc`
-- When querying by genre, I am putting the budget into dollars to match the other endpoints
-- When querying by genre, the inputted genre is the genre name and the comparison is case insensitive
-
-## Running Instructions
-
-- Install Node 22
-- Run `npm i`
-- Run `node server.js`
