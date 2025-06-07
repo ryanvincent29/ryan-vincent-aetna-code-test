@@ -30,10 +30,22 @@ class Database {
     }
   }
 
+  /**
+   * 
+   * @param {string} sql - Parameterized sql statement
+   * @param {array} paramsArray - Array of parameters to inject into SQL
+   * @returns - All items that match the given query
+   */
   async runQueryAll(sql, paramsArray) {
     return await this.#databaseConnection.prepare(sql).all(...paramsArray);
   }
 
+  /**
+   * 
+   * @param {string} sql - Parameterized sql statement
+   * @param {array} paramsArray - Array of parameters to inject into SQL
+   * @returns - A single item that matches the given query
+   */
   async runQuerySingle(sql, paramsArray) {
     return await this.#databaseConnection.prepare(sql).get(...paramsArray);
   }

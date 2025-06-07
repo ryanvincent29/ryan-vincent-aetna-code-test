@@ -5,7 +5,7 @@
 - I am assuming this is meant to be a REST-like API, as opposed to a portal or website of some kind.
 - Though not directy stated, movieId is never returned from the API. I am assuming that the preferred/required method is to lookup movie details via imdbId.
 - When querying by year, I am putting the budget into dollars to match the other endpoints
-- When querying by year, I am assuming that "descending" order is the database equivalent `order by X desc`
+- When querying by year, I am assuming that "descending" order is the database equivalent `order by X desc`.
 - When querying by genre, I am putting the budget into dollars to match the other endpoints
 - When querying by genre, the inputted genre is the genre name and the comparison is case insensitive
 
@@ -14,6 +14,15 @@
 - Install Node 22
 - Run `npm i`
 - Run `node server.js`
+
+## Routes
+
+- `/movies/allMovies` - Lists all movies. Has option for page parameter
+- `/movies/movieDetails/:imdbId` - Gives you specific information about a movie. Give the imdbId for the movie in the path.
+- `/movies/moviesByYear/:year`- Lists movies from a given year. Year is in the route. Has option for page parameter.
+- `/movies/moviesByGenre/:genre` - Lists movies from a given genre. Genre is in the route (text of genre). Has option for page parameter.
+
+________________________________
 
 ## Pre-requisites
 
